@@ -1,0 +1,12 @@
+<?php require 'templates/header.phtml' ?>
+
+<div class="mt-5 w-25 mx-auto">
+    <form method="POST" action='formProducts<?php if(isset($id)){ echo "/".$id; } ?>'>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="categoria" placeholder="N° Categoria">
+        <input type="number" name="precio" placeholder="Precio">
+        <button type="submit" class="btn btn-primary mt-3">Agregar producto</button>
+    </form>
+</div>
+
+<?php require 'templates/footer.phtml' ?> 

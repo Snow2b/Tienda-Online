@@ -1,0 +1,17 @@
+<?php require './templates/header.phtml' ?>
+
+<ul class="list-group list-group-item-info">
+    <li class="list-group-item list-group-item-action list-group-item-info">
+        <div>
+            <b><?= $product->categoria ?></b> | <?=substr($product->nombre,0,25)?> | ($ <?= $product->precio ?>)
+            <button><a href="formProducts/<?=$product->id?>">Editar</a></button>
+            <button><a href="products">volver</a></button>
+            <button><a href="deleteProduct/<?=$product->id?>">Borrar</a></button>
+        </div>
+        
+    </li>
+</ul>
+
+
+
+<?php require './templates/footer.phtml' ?>
